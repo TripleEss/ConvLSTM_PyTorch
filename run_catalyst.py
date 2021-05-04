@@ -13,8 +13,8 @@ from torch.utils.data.dataset import Subset
 from tqdm import tqdm as tqdm
 
 import catalyst
-from catalyst.core.callbacks.checkpoint import CheckpointCallback
-from catalyst.core.callbacks.early_stop import EarlyStoppingCallback
+from catalyst.callbacks.checkpoint import CheckpointCallback
+from catalyst.callbacks.misc import EarlyStoppingCallback
 from catalyst.dl import SupervisedRunner
 from moving_mnist_dataset import MovingMnistDataset
 from seq2seq import ConvLSTMEncoderPredictor
